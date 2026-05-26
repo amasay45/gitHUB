@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+    <div class="grid-box">
+        <div class="box">HELLO</div>
+        <div class="box">HELLO</div>
+        <div class="box">HELLO</div>
+        <div class="box">HELLO</div>
+        <div class="box">HELLO</div>
+        <div class="box">HELLO</div>
+    </div>
+
+    <style type="text/css">
+        .grid-box{
+            display: grid;
+            grid-template-columns:repeat(3,1fr) ;
+            gap: 10px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .box{
+            background: red;
+            height: 100px;
+            margin: 10px;
+            justify-content: center;
+    display: flex;
+    align-items: center;
+        }
+    </style>
+</body>
+</html>
